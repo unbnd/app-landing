@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98vh;
+    height: 92vh;
     flex-direction: column;
     gap: 16px;
 }
@@ -12,6 +12,7 @@ body {
     font-family: "DM Sans", sans-serif;
     color: white;
     background-color: #131314;
+    overflow: hidden;
 }
 
 h1 {
@@ -100,6 +101,64 @@ p {
     }
 }
 
+@keyframes fadeButton {
+    from {
+        color: white;
+        background-color: transparent;
+    }
+    to {
+        color: black;
+        background-color: white;
+    }
+}
+
 .logo {
     animation: fadeLogo 0.7s cubic-bezier(0.02, 0.01, 0.21, 1) forwards
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 13.5px 20px;
+    font-size: 16px;
+    margin: 0;
+    color: white;
+    background-color: transparent;
+    border-radius: 16px;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.5s cubic-bezier(0.02, 0.01, 0.21, 1) allow-discrete;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    transform: scale(1.1);
+}
+
+.links {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    animation: fadeIn 0.7s 0.9s cubic-bezier(0.02, 0.01, 0.21, 1) forwards;
+    gap: 8px;
+}
+
+.mdicon-button {
+    font-size: 20px !important;
+}
+
+.svg {
+    fill: white;
+}
+
+.button:hover + .svg {
+    fill: black;
+}
+
+a {
+    text-decoration: none;
 }
