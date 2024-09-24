@@ -3,20 +3,47 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Coming soon</title>
+        <title>Coming soon!</title>
         <meta name="description" content="Unbound">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Coming soon" />
+        <meta property="og:title" content="Coming soon!" />
         <meta property="og:description" content="Meet a new way to interact with others online" />
         <meta property="og:url" content="https://app.unbnd.net" />
         <meta property="og:image" content="full thumbnail path" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="fontawesome.css" rel="stylesheet" />
         <link href="brands.css" rel="stylesheet" />
         <link href="solid.css" rel="stylesheet" />
+        <link
+            href="favicon_light.png"
+            rel="icon"
+            media="(prefers-color-scheme: light)"
+            type="image/png"
+        />
+
+        <link
+            href="favicon_dark.png"
+            rel="icon"
+            media="(prefers-color-scheme: dark)"
+            type="image/png"
+        />
+
+        <link
+            href="favicon_dark.svg"
+            rel="icon"
+            media="(prefers-color-scheme: dark)"
+            type="image/png"
+        />
+
+        <link
+            href="favicon_light.svg"
+            rel="icon"
+            media="(prefers-color-scheme: light)"
+            type="svg/xml"
+        />
     </head>
     <body>
         <div class="coming">
@@ -26,25 +53,27 @@
             <h1 class="title">Coming soon</h1>
             <p class="text">We know you're excited, but sit back, while we cook up Unbound for you!</p>
         </div>
-        <div class="links">
-            <a href="https://twitter.com/useunbnd">
-                <button class="button">
-                    <i class="fa-brands fa-twitter"></i>
-                     Twitter
-                </button>
-            </a>
-            <a href="https://status.unbnd.net">
-                <button class="button">
-                    <span class="material-symbols-outlined mdicon-button">dns</span>
-                    Status
-                </button>
-            </a>
-            <a href="https://discord.gg/geometrical-designs-929350597386338364">
-                <button class="button">
-                    <i class="fa-brands fa-discord"></i>
-                    Discord server                    
-                </button>
-            </a>
+        <div class="links-container">
+            <div class="links">
+                <a href="https://twitter.com/useunbnd">
+                    <button class="button">
+                        <i class="fa-brands fa-twitter"></i>
+                         <p class="linklabel">Twitter</p>
+                    </button>
+                </a>
+                <a href="https://status.unbnd.net">
+                    <button class="button">
+                        <span class="material-symbols-outlined mdicon-button">dns</span>
+                        <p class="linklabel">Status</p>
+                    </button>
+                </a>
+                <a href="https://discord.gg/geometrical-designs-929350597386338364">
+                    <button class="button">
+                        <i class="fa-brands fa-discord"></i>
+                        <p class="linklabel">Discord server</p>                  
+                    </button>
+                </a>
+            </div>
         </div>
     </body>
 </html>
